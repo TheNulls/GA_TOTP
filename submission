@@ -1,0 +1,4 @@
+#!/bin/bash
+npm install
+npm start &
+python3 -mwebbrowser http://localhost:3000
