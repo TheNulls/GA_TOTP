@@ -22,7 +22,7 @@ app.get('/generate', (req, res) => {
 
 app.get('/', function (req, res) {
 	
-	res.sendFile(__dirname + '/index.html');
+	res.sendFile(__dirname+'/index.html');
 	var token_num = req.url.substr(7); // grabs arguments of form after '/?code=' 
 	var secret = 'KVTHGMZQMI2WYQJMIYXFUI3WNAYWYTCU' 
 
@@ -46,7 +46,7 @@ app.get('/', function (req, res) {
 	
 })
 
-app.listen(3000, function () {
+app.listen(3005, function () {
   console.log('App listening on port 3000!')
 })
 
