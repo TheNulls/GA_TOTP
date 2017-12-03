@@ -19,24 +19,24 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 
 			
 #ASSUMPTIONS MADE USING ASSIGNMENT DESCRIPTION:
-
+```
 	( "You can use any programminglanguage to complete this assignment.")
 		node is installed
 		python3 is installed
 		some form of bash shell is accessible
-
+```
 #EXTERNAL RESOURCES USED:
-
+```
 	node/express
 	
 		- speakeasy (https://www.npmjs.com/package/speakeasy)
 		
 		- qrcode (https://www.npmjs.com/package/qrcode)
 		
-
+```
 #EXPLANATION OF TOTP(The way TOTP works in regards to Google Authenticator is as follows):
 
-	
+```	
 		1. 	HMAC-SHA1 is calculated with the shared key and message as parameters.
 		2. 	This generates a 40 bit hexidecimal string. However, it would be entirely unreasonable to ask the user to enter this within 30 seconds.
 		3.		To make it easier for the user, while still remaining secure, we need to dynamically truncate this string.
@@ -45,9 +45,9 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 		6.		From this offset, we read the next 31-bits in the string.
 		7.		We then take this truncated string and convert it to decimal.
 		8.		Finally, to get our authenticator code, we simply use the last 6-digits of this decimal value.
-		
+```		
 #EXAMPLE:
-
+```
 	1.		Let's take the generated hex value of 97 19 a1 0c d5 69 a8 fa 09 f3 c1 a5 82 da b3 1f b9 ac da a6  (taken from random.org)
 	2. 	For simplicity sake, we can split this into 20 individual 1-byte sized strings.
 	3. 	Formatted
@@ -60,3 +60,4 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 	8.		Now we convert this to decimal, which in this case is "2834958835"
 	9.		Finally, we take the last 6 digits of this number and we have our generated authenticator code for 30 seconds. In this example,
 			The code is "958835".
+```
