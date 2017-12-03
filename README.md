@@ -3,17 +3,14 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 
 # INSTRUCTIONS TO RUN:
 
-	1. 	Open a Bash shell and navigate to the project root.
-	2. 	Run 'submission'
-			- Should this fail at any point, type the following commands
-				a. 	'npm install' (This will install dependencies)
-				b. 	'npm start' (This will launch the webserver)
-				c.		'python3 -mwebbrowser http://localhost:3000' (This will open the web browser automatically)
-					- If this last one fails, simply open a web browser and navigate to 'localhost:3000'
-	3.		Once the webpage loads, scan the QRCODE with your phone's app.
-	4.		This will give you a key in your authenticator app, enter this code in the 'code' box and hit enter.
-	5.		Back on the original bash shell, there will be a message displayed if you were successful or not.
-	6.		Wait for a second code to verify it works correctly and changes every 30 seconds.
+	
+	1. 	'npm install' (This will install dependencies)
+	2. 	'npm start' (This will launch the webserver)
+	3. 	Open a web browser and navigate to 'localhost:3000'
+	4.		Once the webpage loads, scan the QRCODE with your phone's app.
+	5.		This will give you a key in your authenticator app, enter this code in the 'code' box and hit enter.
+	6.		Back on the original bash shell, there will be a message displayed if you were successful or not.
+	7.		Wait for a second code to verify it works correctly and changes every 30 seconds.
 			- Try entering a correct code to get the 'success' and then re-enter that same code once it changes to get a 'failure'.
 
 
@@ -22,7 +19,6 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 ```
 	( "You can use any programminglanguage to complete this assignment.")
 		node is installed
-		python3 is installed
 		some form of bash shell is accessible
 ```
 # EXTERNAL RESOURCES USED:
