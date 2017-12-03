@@ -1,7 +1,7 @@
 README
 Google Authenticator Time Based One Time Password (RFC 6238)
 
-#INSTRUCTIONS TO RUN:
+# INSTRUCTIONS TO RUN:
 
 	1. 	Open a Bash shell and navigate to the project root.
 	2. 	Run 'submission'
@@ -18,14 +18,14 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 
 
 			
-#ASSUMPTIONS MADE USING ASSIGNMENT DESCRIPTION:
+# ASSUMPTIONS MADE USING ASSIGNMENT DESCRIPTION:
 ```
 	( "You can use any programminglanguage to complete this assignment.")
 		node is installed
 		python3 is installed
 		some form of bash shell is accessible
 ```
-#EXTERNAL RESOURCES USED:
+# EXTERNAL RESOURCES USED:
 ```
 	node/express
 	
@@ -34,7 +34,7 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 		- qrcode (https://www.npmjs.com/package/qrcode)
 		
 ```
-#EXPLANATION OF TOTP(The way TOTP works in regards to Google Authenticator is as follows):
+# EXPLANATION OF TOTP(The way TOTP works in regards to Google Authenticator is as follows):
 
 ```	
 		1. 	HMAC-SHA1 is calculated with the shared key and message as parameters.
@@ -46,7 +46,7 @@ Google Authenticator Time Based One Time Password (RFC 6238)
 		7.		We then take this truncated string and convert it to decimal.
 		8.		Finally, to get our authenticator code, we simply use the last 6-digits of this decimal value.
 ```		
-#EXAMPLE:
+# EXAMPLE:
 ```
 	1.		Let's take the generated hex value of 97 19 a1 0c d5 69 a8 fa 09 f3 c1 a5 82 da b3 1f b9 ac da a6  (taken from random.org)
 	2. 	For simplicity sake, we can split this into 20 individual 1-byte sized strings.
