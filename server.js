@@ -10,7 +10,7 @@ app.get('/generate', (req, res) => {
 	
 	// generate key
 	var secret = speakeasy.generateSecret({length: 20});
-	
+
 	
 	// generate image data
 	QRCode.toDataURL(secret.otpauth_url, function(err, image_data) {
